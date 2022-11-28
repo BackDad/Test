@@ -9,7 +9,9 @@
 - 2 При реализации блоксхемы был использован ресурс [Progr@m4you](https://programforyou.ru/block-diagram-redactor)
 
 <div style="text-align: center">  
+
 ![Image alt](https://github.com/manuk1122/Test/blob/master/diagram%20(1).png)
+
 </div>
 - 3 Задача
 
