@@ -1,4 +1,26 @@
-﻿
+﻿while(true)
+{
+Console.Clear();
+int size = new Random().Next(3,5);
+ Console.WriteLine("Создан массив размером "+ size);
+ string [] ArrayOfRanum = new string [size];
+FillArray(ArrayOfRanum);
+PrintArray(ArrayOfRanum);
+Console.Write("->");
+Console.Write("[");
+for(int i =0; i<SelectOfString(ArrayOfRanum).Length; i++)
+    {Console.Write(SelectOfString(ArrayOfRanum)[i]);
+        Console.Write(" ");
+    }
+Console.Write("]");
+Console.WriteLine();
+Console.Write("<Enter  продолжение > <Пробел> для выхода ... ");
+        if (Console.ReadKey().Key == ConsoleKey.Spacebar)
+            break;
+}
+
+
+
 // метод заполнения массива числами c клавиатуры
 void FillArray(string [] collection)
 {
@@ -43,20 +65,4 @@ while( index < array.Length)
     else index++;
 }
 return newArray;
-}
-
-while(true)
-{
-Console.Clear();
-int size = new Random().Next(3,5);
- Console.WriteLine("Создан массив размером "+ size);
- string [] ArrayOfRanum = new string [size];
-FillArray(ArrayOfRanum);
-PrintArray(ArrayOfRanum);
-Console.Write("->");
-PrintArray(SelectOfString(ArrayOfRanum));
-Console.WriteLine();
-Console.Write("<Enter  продолжение > <Пробел> для выхода ... ");
-        if (Console.ReadKey().Key == ConsoleKey.Spacebar)
-            break;
 }
